@@ -12,15 +12,7 @@ const namesInitial = [];
 function initialsFinder() {
   for (let i = 0; i < names.length; i++) {
     let currentName = names[i];
-    let splittedName = currentName.split("");
-
-    for (let i = 0; i < splittedName.length; i++) {
-      let currentChar = splittedName[i];
-
-      if (splittedName.indexOf(currentChar) === 0) {
-        namesInitial.push(currentChar);
-      }
-    }
+    namesInitial.push(currentName[0]);
   }
 }
 

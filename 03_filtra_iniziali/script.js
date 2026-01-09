@@ -15,14 +15,9 @@ const filteredNames = [];
 function initialsFilter() {
   for (let i = 0; i < names.length; i++) {
     let currentName = names[i];
-    let splittedName = currentName.split("");
 
-    for (let i = 0; i < splittedName.length; i++) {
-      let currentChar = splittedName[i];
-
-      if (chosenLetter === currentChar) {
-        filteredNames.push(splittedName.join(""));
-      }
+    if (currentName[0] === chosenLetter) {
+      filteredNames.push(currentName);
     }
   }
 }
