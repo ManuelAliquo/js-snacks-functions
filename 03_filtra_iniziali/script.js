@@ -11,6 +11,7 @@ const chosenLetter = "A";
 
 const filteredNames = [];
 
+/*
 // Dichiara la funzione qui.
 function initialsFilter() {
   for (let i = 0; i < names.length; i++) {
@@ -27,3 +28,21 @@ initialsFilter(names);
 console.log(filteredNames);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+*/
+
+// # Bonus #
+
+// Dichiara la funzione qui.
+const initialsFilter = () => {
+  for (let i = 0; i < names.length; i++) {
+    let currentName = names[i];
+
+    if (currentName[0] === chosenLetter) {
+      filteredNames.push(currentName);
+    }
+  }
+};
+
+// Invoca la funzione qui e stampa il risultato in console
+initialsFilter(names);
+console.log(filteredNames);

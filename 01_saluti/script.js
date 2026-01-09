@@ -6,6 +6,7 @@
 
 const userName = "Mario";
 
+/*
 // Dichiara la funzione qui.
 function greetUser() {
   return `Ciao ${userName}`;
@@ -15,3 +16,12 @@ function greetUser() {
 console.log(greetUser());
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+*/
+
+// # Bonus #
+
+// Dichiara la funzione qui.
+const greetUser = () => `Ciao ${userName}`;
+
+// Invoca la funzione qui e stampa il risultato in console
+console.log(greetUser());
